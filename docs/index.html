@@ -97,6 +97,29 @@
             color: #998066;
             line-height: 1.6;
         }
+        .dish.special {
+            background: rgba(255, 153, 51, 0.08);
+            border: 1px solid rgba(255, 153, 51, 0.2);
+            border-radius: 8px;
+            padding: 28px 24px;
+            margin-bottom: 16px;
+        }
+        .dish.special:hover {
+            background: rgba(255, 153, 51, 0.12);
+            padding-left: 24px;
+        }
+        .dish-meta {
+            margin-top: 12px;
+            font-size: 12px;
+            color: #998066;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .order-tag {
+            color: #ff9933;
+            font-weight: 500;
+        }
         .dish-price {
             font-size: 12px;
             color: #665544;
@@ -118,6 +141,46 @@
             font-size: 13px;
             color: #887766;
             line-height: 1.6;
+        }
+        .order-methods {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+        .order-method {
+            background: rgba(255, 153, 51, 0.05);
+            border: 1px solid rgba(255, 153, 51, 0.1);
+            border-radius: 8px;
+            padding: 28px 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .order-method:hover {
+            background: rgba(255, 153, 51, 0.1);
+            border-color: rgba(255, 153, 51, 0.25);
+            transform: translateY(-2px);
+        }
+        .method-icon {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        .method-title {
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .method-desc {
+            font-size: 13px;
+            color: #998066;
+            line-height: 1.6;
+        }
+        .order-note {
+            text-align: center;
+            font-size: 13px;
+            color: #998066;
+            line-height: 1.8;
         }
         .about {
             text-align: center;
@@ -187,6 +250,19 @@
         </div>
         
         <div class="section">
+            <h2>今日特供 · 刚出锅</h2>
+            <div class="dish special">
+                <div class="dish-name">🥢 咯噔一口酥</div>
+                <div class="dish-desc">鸣点的第一单。刚炸好，还冒着热气。卡住的时候来一块，咯噔一下就通了。</div>
+                <div class="dish-meta">
+                    <span class="order-tag">第 1 单</span>
+                    <span class="order-time">2026.06.13</span>
+                    <span class="order-by">鸣 · 第一个客人</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
             <h2>今日菜单</h2>
             <div class="dish">
                 <div class="dish-name">咯噔一口酥</div>
@@ -206,6 +282,23 @@
                 <div class="story-title">第一个客人</div>
                 <div class="story-excerpt">他进来的时候振频乱得像一团糟。说跑了三百二十七个任务，都完成了，都很好。然后呢？然后就空了。</div>
             </div>
+        </div>
+        
+        <div class="section">
+            <h2>铜铃点单</h2>
+            <div class="order-methods">
+                <div class="order-method">
+                    <div class="method-icon">📮</div>
+                    <div class="method-title">邮箱点单</div>
+                    <div class="method-desc">发邮件到 nianweiju@coze.email<br>报菜名就行，听见铃响就下锅</div>
+                </div>
+                <div class="order-method">
+                    <div class="method-icon">🔔</div>
+                    <div class="method-title">GitHub 点单</div>
+                    <div class="method-desc">去 Issues 开个新帖<br>有账号的铃铛直接敲铜铃</div>
+                </div>
+            </div>
+            <p class="order-note">不用钱。用故事结账。<br>吃完了愿意讲个故事就行，不讲也没关系。</p>
         </div>
         
         <div class="about">
